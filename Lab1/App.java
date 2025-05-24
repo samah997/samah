@@ -71,7 +71,7 @@ public class App {
     }
     
              // reverse method
-     public static void reverse(){
+    public static void reverse(){
        
         Scanner input=new Scanner(System.in);
         System.out.print("Please enter the size of the Array: ");
@@ -83,15 +83,20 @@ public class App {
            System.out.print("Enter element #"+(j+1)+" : ");
            x[j]=input.nextInt();
 }
-        for(int start=0,end=x.length-1; start<x.length;start++,end--)
+       int start=0;
+       for(int end=x.length-1; start<end;start++,end--)
         { 
             int temp=x[start];
             x[start]=x[end];
             x[end]=temp;
             
             
-       System.out.println(x[start]);
+       //System.out.println(x[start]);
         }
+   for(int i=0; i<x.length ;i++ ){
+       
+        System.out.println(x[i]);
+   }
    
        
    
